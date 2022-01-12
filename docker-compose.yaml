@@ -1,0 +1,8 @@
+version: '3.5'
+
+services:
+  php:
+    build: '.'
+    volumes:
+      - .:/srv/www
+      - ".docker/php.ini:/usr/local/etc/php/conf.d/99-dev.ini"
